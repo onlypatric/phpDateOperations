@@ -9,18 +9,22 @@
 </head>
 
 <body>
-  <p class="sans-serif">
-    <?php
-    if (date("H") > 12) {
-      echo "Buonasera,";
-    } else {
-      echo "Buongiorno,";
-    }
-    ?>
-  </p>
-  <p class="sans-serif">
-    Oggi è il <?php echo date("Y-m-d H:i:s"); ?>
-  </p>
+  <div class="grid place-items-center w-screen h-screen">
+    <div>
+      <p class="sans-serif">
+        <?php
+        if (date("H") > 12) {
+          echo "Buonasera,";
+        } else {
+          echo "Buongiorno,";
+        }
+        ?>
+      </p>
+      <p class="sans-serif">
+        Oggi è il <?php echo date("Y-m-d H:i:s"); ?>
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
