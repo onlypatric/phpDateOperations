@@ -54,8 +54,8 @@ $diffInSeconds = $dataTarget->getTimestamp() - $dataOggi->getTimestamp();
 <body>
   <div class="grid place-items-center w-screen h-screen">
     <div>
-      <h1 class="sans-serif text-4xl font-bold">Countdown fino a fine scuola</h1>
-      <p id="countdown" class="sans-serif text-2xl"></p>
+      <h1 class="sans-serif text-2xl font-bold">Countdown fino a fine scuola</h1>
+      <p id="countdown" class="sans-serif"></p>
     </div>
   </div>
 

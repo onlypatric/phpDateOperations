@@ -1,3 +1,6 @@
+<?php 
+$h_today = null; // str
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,12 +14,19 @@
 <body>
   <div class="grid place-items-center w-screen h-screen">
     <div>
-      <p class="sans-serif">
+      <p class="sans-serif font-bold text-2xl">
         <?php
-        if (date("H") > 12) {
-          echo "Buonasera,";
-        } else {
-          echo "Buongiorno,";
+        try {
+          $h_today = date("H");
+          if ($h_today > 18) {
+            echo "Buonasera,";
+          } else if($h_today>12){
+            echo "Buon pomeriggio,";
+          } else {
+            echo "Buongiorno,";
+          }
+        } catch (\Throwable $th) {
+          echo "Ciao,";
         }
         ?>
       </p>
